@@ -23,6 +23,7 @@ async def process_kitchen_gas_bill(file: UploadFile):
 
         # OCR
         ocr_result = ocr_model.ocr(tmp_path, cls=True)
+        #ocr_result = ocr_model.ocr(tmp_path)
 
         ocr_lines = []
         for page in ocr_result:

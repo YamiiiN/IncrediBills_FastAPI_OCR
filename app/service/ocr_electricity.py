@@ -17,6 +17,7 @@ async def process_electricity_bill(file):
 
         # Perform OCR
         ocr_result = ocr_model.ocr(tmp_path, cls=True)
+        #ocr_result = ocr_model.ocr(tmp_path)
 
         ocr_lines = []
         all_text = ""

@@ -24,6 +24,7 @@ async def process_transport_fuel_bill(file: UploadFile):
 
         # OCR
         ocr_result = ocr_model.ocr(tmp_path, cls=True)
+        #ocr_result = ocr_model.ocr(tmp_path)
 
         ocr_lines = []
         for page in ocr_result:
